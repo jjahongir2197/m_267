@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Vote System</h2>
+
+<form method="POST">
+    <button name="lang" value="Python">Python</button>
+    <button name="lang" value="Java">Java</button>
+    <button name="lang" value="C++">C++</button>
+</form>
+
+<h3>Results:</h3>
+
+<ul>
+{% for k, v in votes.items() %}
+    <li>{{ k }} - {{ v }}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
